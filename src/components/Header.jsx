@@ -4,7 +4,7 @@ import Person from "../assets/person.png";
 
 const Header = () => {
   return (
-    <section className="bg-blue-200 px-35 grid grid-cols-2 py-40">
+    <section id="hero" className="bg-blue-200 px-35 grid grid-cols-2 py-40">
       <div className="flex flex-col gap-10 pr-60">
         <p className="text-xl">
           Say hello to{" "}
@@ -17,7 +17,7 @@ const Header = () => {
         </p>
         <a
           href=""
-          className="rounded-full bg-black p-3 text-white w-30 text-center"
+          className="rounded-full bg-black p-3 text-white w-30 text-center transition-all duration-300 ease-out hover:-translate-y-1"
         >
           Hire me
         </a>
@@ -32,7 +32,7 @@ const Header = () => {
             <p className="text-5xl font-bold mb-3">
               1<span className="text-orange-500">+</span>
             </p>
-            <p className="text-gray-600 text-sm">Year Experience</p>
+            <p className="text-gray-600 text-sm">Year Exp.</p>
           </div>
           <div className="flex flex-col">
             <p className="text-5xl font-bold mb-3">
@@ -43,13 +43,14 @@ const Header = () => {
         </div>
       </div>
       <div className="place-items-center mt-25">
-        <div className="relative bg-linear-to-r from-orange-300 to-red-400 rounded-t-full rounded-b-none size-110">
+        <div className="relative bg-linear-to-r from-orange-300 to-red-400 rounded-t-full rounded-b-none size-115">
           <img
             src={Person}
             alt="Photo"
-            className="absolute object-cover bottom-0 size-130"
+            className="absolute object-cover bottom-0 size-125"
           />
         </div>
+        <p className="mt-5 italic text-xl">Stackine</p>
       </div>
     </section>
   );
